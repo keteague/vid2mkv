@@ -20,7 +20,7 @@ if [%1]==[] goto :help
 :convert
 echo Converting file to MKV format...
 %_ffmpeg% -i %1 -acodec copy -vcodec copy "%~n1.mkv"
-del "%1"
+del %1
 goto:eof
 
 
